@@ -1,0 +1,20 @@
+.cardContainer{
+  background: rgba(0, 0, 0, 0.548);
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 200px;
+  height: 280px;
+  margin: 5px;
+  text-align: center;
+  color: yellow;
+  border-radius: 10px;
+}
+
+.flag{
+  width: 180px;
+  height: 150px;
+  object-fit: fill;
+}

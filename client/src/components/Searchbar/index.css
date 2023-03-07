@@ -1,0 +1,19 @@
+.container-searchbar{
+  display: flex;
+
+}
+
+.input{
+  border-radius: 5px;
+}
+
+.btnSearch{
+  border-radius: 50%;
+}
+
+.img-lupa{
+  display: flex;
+  width: 18px;
+  border-radius: 50%;
+  margin: 0;
+}

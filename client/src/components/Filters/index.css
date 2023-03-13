@@ -1,0 +1,50 @@
+.filtersContainer{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 5px;
+}
+
+.alphabetical{
+  border: none;
+  border-radius: 5px;
+  background: sienna;
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+  cursor: pointer;
+  width: auto;
+}
+
+.population{
+  border: none;
+  border-radius: 5px;
+  background: sienna;
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+  cursor: pointer;
+  width: auto;
+}
+
+.continent{
+  border: none;
+  border-radius: 5px;
+  background: sienna;
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+  cursor: pointer;
+  width: auto;
+}
+
+.activity{
+  border: none;
+  border-radius: 5px;
+  background: sienna;
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+  cursor: pointer;
+  width: auto;
+}

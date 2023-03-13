@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { getCountries } from "../../redux/countryActions";
 import Card from "../Card";
+import Filters from "../Filters";
 import Pagination from "../Pagination";
 import Searchbar from "../Searchbar";
 import "./index.css";
@@ -32,6 +33,9 @@ export default function Home() {
           Crear Actividad
         </Link>
       </header>
+      <section className="filters">
+        <Filters />
+      </section>
       <section className="numbers">
         <Pagination
           countriesPerPage={countriesPerPage}

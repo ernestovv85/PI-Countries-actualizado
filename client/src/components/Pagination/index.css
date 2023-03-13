@@ -1,17 +1,18 @@
-.paginationUl{
+.paginationUl {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
-  margin-top: 60px;
+  margin-top: 5px;
 }
 
 .paginationButton {
+  margin-left: auto;
+  margin-right: auto;
   background-color: #000000a2;
   height: 5ex;
   width: 5ex;
-  margin: 0.5ex; 
   border-radius: 5ex;
-  border: transparent;
+  border: none;
   color: rgb(255, 255, 255);
   transition: 0.3s;
   cursor: pointer;
@@ -23,10 +24,9 @@
   transform: translateY(1ex);
 }
 
-.paginationButton:active
-{
+.paginationButton:active {
   transition-delay: 0s;
   color: rgb(69, 65, 129);
-  box-shadow: 0 0 40px rgb(219, 219, 219);        
-  transform: translateY(1ex);  
+  box-shadow: 0 0 40px rgb(219, 219, 219);
+  transform: translateY(1ex);
 }

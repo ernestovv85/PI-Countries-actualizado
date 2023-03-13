@@ -43,11 +43,11 @@ __ACLARACIÓN:__ Las dependencias actuales se encuentran en las versiones que ve
 
 Versiones:
 
-- __react__: 17.0.1
-- __react-dom__: 17.0.1
-- __react-router-dom__: 5.2.0
-- __redux__: 4.0.5
-- __react-redux__: 7.2.3
+- __react__: 18.2.0
+- __react-dom__: 18.2.0
+- __react-router-dom__: 6.8.2
+- __redux toolkit__: 1.9.3
+- __react-redux__: 8.0.5
 
 Está permitido, __bajo su responsabilidad__, actualizar las dependencias a versiones más actuales.
 
@@ -183,9 +183,3 @@ __IMPORTANTE__: No está permitido utilizar los filtrados, ordenamientos y pagin
 - [ ] __POST /activities__:
   - Recibe los datos recolectados desde el formulario controlado de la ruta de creación de actividad turística por body
   - Crea una actividad turística en la base de datos, relacionada con los países correspondientes
-
-## Testing
-
-- [ ] Al menos tener un componente del frontend con sus tests respectivos
-- [ ] Al menos tener una ruta del backend con sus tests respectivos
-- [ ] Al menos tener un modelo de la base de datos con sus tests respectivos

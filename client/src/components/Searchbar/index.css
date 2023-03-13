@@ -5,10 +5,12 @@
 
 .input{
   border-radius: 5px;
+  text-align: center;
 }
 
 .btnSearch{
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .img-lupa{

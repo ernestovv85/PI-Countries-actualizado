@@ -75,6 +75,18 @@ export const countrySlice = createSlice({
             );
       state.countries = continents;
     },
+    filterByActivity: (state, action) => {
+      let activity =
+        action.payload === "default"
+          ? state.allCountries
+          : state.allCountries.filter((country) => {
+              const activities = country.activities.map(
+                (activity) => activity.name
+              );
+              return activities.includes(action.payload);
+            });
+      state.countries = activity;
+    },
   },
 });
 
@@ -84,6 +96,7 @@ export const {
   filterAlphabetically,
   filterByPopulation,
   filterByContinent,
+  filterByActivity,
 } = countrySlice.actions;
 
 export default countrySlice.reducer;

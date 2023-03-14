@@ -5,6 +5,7 @@ import {
   filterAlphabetically,
   filterByPopulation,
   filterByContinent,
+  filterByActivity,
 } from "./conuntrySlice";
 
 export function getCountries() {
@@ -31,4 +32,8 @@ export function getCountriesPopulation(payload) {
 
 export function getCountriesContinent(payload) {
   return filterByContinent(payload)
+}
+
+export function getCountriesActivity(payload) {
+  return filterByActivity(payload)
 }

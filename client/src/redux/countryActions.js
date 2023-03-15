@@ -6,6 +6,8 @@ import {
   filterByPopulation,
   filterByContinent,
   filterByActivity,
+  countriesById,
+  clearDetail,
 } from "./conuntrySlice";
 
 export function getCountries() {
@@ -20,6 +22,17 @@ export function getCountriesByName(name) {
     let json = await axios.get(`http://localhost:3001/countries?name=${name}`);
     return dispatch(countriesByName(json.data));
   };
+}
+
+export function getCountriesById(id) {
+  return async function (dispatch) {
+    let json = await axios.get(`http://localhost:3001/countries/${id}`);
+    return dispatch(countriesById(json.data));
+  };
+}
+
+export function clear() {
+  return clearDetail()
 }
 
 export function getCountriesAlphabetically(payload) {

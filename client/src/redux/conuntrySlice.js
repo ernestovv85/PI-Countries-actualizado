@@ -5,6 +5,7 @@ export const countrySlice = createSlice({
   initialState: {
     countries: [],
     allCountries: [],
+    country: [],
   },
 
   reducers: {
@@ -14,6 +15,12 @@ export const countrySlice = createSlice({
     },
     countriesByName: (state, action) => {
       state.countries = action.payload;
+    },
+    countriesById: (state, action) => {
+      state.country = action.payload;
+    },
+    clearDetail: (state) => {
+      state.country = [];
     },
     filterCountriesAlphabetically: (state, action) => {
       let sortName =
@@ -97,6 +104,8 @@ export const {
   filterByPopulation,
   filterByContinent,
   filterByActivity,
+  countriesById,
+  clearDetail,
 } = countrySlice.actions;
 
 export default countrySlice.reducer;

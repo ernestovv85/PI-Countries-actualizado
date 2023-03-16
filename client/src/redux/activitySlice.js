@@ -7,11 +7,14 @@ export const activitySlice = createSlice({
   },
   reducers: {
     getAllActivities: (state, action) => {
-      state.activities.push(action.payload);
+      state.activities = action.payload;
+    },
+    create: (state, action) => {
+      state.activities = [...state.activities, action.payload];
     },
   },
-})
+});
 
-export const { getAllActivities } = activitySlice.actions;
+export const { getAllActivities, create } = activitySlice.actions;
 
 export default activitySlice.reducer;

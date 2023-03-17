@@ -34,9 +34,7 @@ export default function Filters() {
     setOrder(`${event.target.value}`);
   }
   function handlerActivity(event) {
-    event.preventDefault();
     dispatch(getCountriesActivity(event.target.value));
-    setOrder(`${event.target.value}`);
   }
 
   return (
@@ -75,7 +73,7 @@ export default function Filters() {
       <select className="activity" onChange={event => handlerActivity(event)}>
         <option hidden>Actividad</option>
         {activities.map((activity) => (
-          <option value={activity.id}>{activity.name}</option>
+          <option value={activity.name}>{activity.name}</option>
         ))}
       </select>
     </div>

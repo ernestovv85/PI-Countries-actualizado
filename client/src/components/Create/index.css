@@ -1,0 +1,151 @@
+.createContainer {
+  background-image: url("../../assets/create.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.formContainer {
+  background: rgba(0, 0, 0, 0.55);
+  min-width: 40%;
+  min-height: 60%;
+  border-radius: 20px;
+  color: yellow;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.titleCreate {
+  width: 100%;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.inputNameContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.inputName {
+  border-radius: 10px;
+  border: none;
+  text-align: center;
+}
+
+.inputDifficultyContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.inputDifficulty {
+  border-radius: 10px;
+  border: none;
+  text-align: center;
+}
+
+.inputDurationContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.inputDuration {
+  border-radius: 10px;
+  border: none;
+  text-align: center;
+}
+
+.inputSeasonContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.checkBoxesZone{
+  display: flex;
+  margin-top: 50px;
+}
+
+.check{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.countriesSelectContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.countriesSelect {
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+}
+
+.submitContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.submitButton {
+  background: radial-gradient(yellow, green);
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.itemsContainer{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.items {
+  font-size: x-small;
+}
+
+.buttonRemove{
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+}
+
+.error{
+  color: black;
+  background: yellow;
+  font-size: x-small;
+}

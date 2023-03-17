@@ -53,12 +53,23 @@ h3{
 .activitiesContainer{
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
   color: yellow;
 }
 
 .activitiesInfo{
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.seasonContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .noInfoContainer{

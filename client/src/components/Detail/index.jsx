@@ -30,8 +30,8 @@ export default function Detail() {
           <h3>Superficie: {country.area} km2</h3>
           <h3>Población: {country.population} habitantes</h3>
         </section>
-        {country.activities?.lenght ? (
-          country.activities.map((activity) => {
+        {country.activities?.length ? (
+          country?.activities?.map((activity) => {
             return (
               <section className="activitiesContainer">
                 <h2>Actividades</h2>
@@ -39,7 +39,12 @@ export default function Detail() {
                   <h3>Actividad: {activity.name}</h3>
                   <h3>Dificultad: {activity.difficulty}</h3>
                   <h3>Duración: {activity.duration} hrs</h3>
+                  <section className="seasonContainer">
                   <h3>Temporada:</h3>
+                    {activity.season.map((season) => {
+                      return <h3>{season}</h3>;
+                    })}
+                  </section>
                 </section>
               </section>
             );
